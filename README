@@ -1,10 +1,6 @@
 We modified the openWRT source code and embeded Atheros CSI tool into its distribution. 
 
-If you want to konw more about Atheros CSI tool, you can refer to our Maintainance page http://pdcc.ntu.edu.sg/wands/Atheros/ for more information.
-
-About how to install the CSI-enabled openWRT into your own Wi-Fi routers, please check our user guide here.
-
-
+If you are interested in Atheros CSI tool or detailed instructions on how to install the CSI-enabled OpenWRT into your own Wi-Fi routers, you can refer to our Maintainance page http://pdcc.ntu.edu.sg/wands/Atheros/ for more information.
 
 
 
