@@ -1,7 +1,0 @@
-config MODULES
-	bool
-	default y
-	option modules
-
-source "Config-build.in"
-source "tmp/.config-package.in"
