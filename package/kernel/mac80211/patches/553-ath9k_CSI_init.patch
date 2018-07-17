@@ -1,0 +1,11 @@
+--- a/drivers/net/wireless/ath/ath9k/init.c	
++++ b/drivers/net/wireless/ath/ath9k/init.c	
+@@ -886,7 +886,7 @@
+ 		ieee80211_hw_set(hw, SUPPORTS_PS);
+ 
+ 	if (sc->sc_ah->caps.hw_caps & ATH9K_HW_CAP_HT) {
+-		ieee80211_hw_set(hw, AMPDU_AGGREGATION);
++		//ieee80211_hw_set(hw, AMPDU_AGGREGATION);
+ 
+ 		if (AR_SREV_9280_20_OR_LATER(ah))
+ 			hw->radiotap_mcs_details |=

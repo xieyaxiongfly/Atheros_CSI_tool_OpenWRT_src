@@ -1,0 +1,24 @@
+--- a/drivers/net/wireless/ath/ath9k/hw.c
++++ b/drivers/net/wireless/ath/ath9k/hw.c
+@@ -1891,6 +1891,9 @@
+ 	struct timespec tsf_ts;
+ 	u32 tsf_offset;
+ 	u64 tsf = 0;
++
++	u32 tmp;
++
+ 	int r;
+ 	bool start_mci_reset = false;
+ 	bool save_fullsleep = ah->chip_fullsleep;
+@@ -2103,6 +2106,11 @@
+ 	if (AR_SREV_9330(ah) || AR_SREV_9340(ah))
+ 		ath9k_hw_disable_pll_lock_detect(ah);
+ 
++	//csi_debug 
++	tmp = REG_READ(ah,0x8344);
++	tmp |= (1 << 28);
++	REG_WRITE(ah, 0x8344,tmp);
++	
+ 	return 0;
+ }
+ EXPORT_SYMBOL(ath9k_hw_reset);
